@@ -12,7 +12,7 @@ const config: Config = {
         glass: {
           light: "rgba(255, 255, 255, 0.04)",
           border: "rgba(255, 255, 255, 0.06)",
-          "border-strong": "rgba(59, 130, 246, 0.15)",
+          "border-strong": "rgba(239, 68, 68, 0.15)",
         },
       },
     },

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const ShieldIcon = () => (
   <svg
-    className="h-10 w-10 text-blue-300"
+    className="h-10 w-10 text-red-300"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -22,7 +22,7 @@ const ShieldIcon = () => (
 
 const BoltIcon = () => (
   <svg
-    className="h-10 w-10 text-blue-300"
+    className="h-10 w-10 text-red-300"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -38,7 +38,7 @@ const BoltIcon = () => (
 
 const CubeIcon = () => (
   <svg
-    className="h-10 w-10 text-blue-300"
+    className="h-10 w-10 text-red-300"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -54,7 +54,7 @@ const CubeIcon = () => (
 
 const ChartIcon = () => (
   <svg
-    className="h-10 w-10 text-blue-300"
+    className="h-10 w-10 text-red-300"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -93,11 +93,11 @@ const FeatureCard = ({ icon, title, description, index }: FeatureCardProps) => {
           : "translate-y-10 opacity-0"
       }`}
     >
-      <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-colors duration-300 group-hover:border-blue-400/40">
+      <div className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-colors duration-300 group-hover:border-red-400/40">
         {icon}
       </div>
       <h3 className="mb-3 text-xl font-semibold text-white">{title}</h3>
-      <p className="leading-relaxed text-blue-200/70">{description}</p>
+      <p className="leading-relaxed text-red-200/70">{description}</p>
     </div>
   );
 };
@@ -114,7 +114,7 @@ const StatItem = ({ value, label }: StatItemProps) => (
     <div className="mb-1 text-4xl font-bold text-white md:text-5xl">
       {value}
     </div>
-    <div className="text-xs uppercase tracking-widest text-blue-200/60">
+    <div className="text-xs uppercase tracking-widest text-red-200/60">
       {label}
     </div>
   </div>
@@ -133,20 +133,20 @@ export default function Home() {
     <main className="relative min-h-screen overflow-hidden">
       {/* ── Animated Background ── */}
       <div className="fixed inset-0 -z-10">
-        {/* Deep blue gradient base */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a1025] via-[#111c3a] to-[#0b1a30]" />
+        {/* Deep red gradient base */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1a0a0a] via-[#2a1111] to-[#1f0a0a]" />
 
         {/* Floating orbs */}
         <div
-          className="absolute -left-40 -top-40 h-[500px] w-[500px] animate-pulse rounded-full bg-gradient-to-br from-blue-500/30 to-cyan-400/10 blur-[120px]"
+          className="absolute -left-40 -top-40 h-[500px] w-[500px] animate-pulse rounded-full bg-gradient-to-br from-red-500/30 to-orange-400/10 blur-[120px]"
           style={{ animationDuration: "8s" }}
         />
         <div
-          className="absolute -bottom-40 -right-40 h-[600px] w-[600px] animate-pulse rounded-full bg-gradient-to-br from-blue-600/30 to-indigo-500/20 blur-[140px]"
+          className="absolute -bottom-40 -right-40 h-[600px] w-[600px] animate-pulse rounded-full bg-gradient-to-br from-red-600/30 to-rose-500/20 blur-[140px]"
           style={{ animationDuration: "10s", animationDelay: "2s" }}
         />
         <div
-          className="absolute right-1/4 top-1/3 h-[400px] w-[400px] animate-pulse rounded-full bg-gradient-to-br from-sky-400/20 to-blue-700/10 blur-[100px]"
+          className="absolute right-1/4 top-1/3 h-[400px] w-[400px] animate-pulse rounded-full bg-gradient-to-br from-orange-400/20 to-red-700/10 blur-[100px]"
           style={{ animationDuration: "12s", animationDelay: "4s" }}
         />
 
@@ -162,7 +162,7 @@ export default function Home() {
       {/* ── Navigation ── */}
       <nav className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-12">
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-400 to-blue-600">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-red-400 to-red-600">
             <span className="text-sm font-bold text-white">N</span>
           </div>
           <span className="text-lg font-semibold tracking-tight text-white">
@@ -172,25 +172,25 @@ export default function Home() {
         <div className="hidden items-center gap-8 text-sm md:flex">
           <a
             href="#"
-            className="text-blue-200/70 transition-colors hover:text-white"
+            className="text-red-200/70 transition-colors hover:text-white"
           >
             Features
           </a>
           <a
             href="#"
-            className="text-blue-200/70 transition-colors hover:text-white"
+            className="text-red-200/70 transition-colors hover:text-white"
           >
             Pricing
           </a>
           <a
             href="#"
-            className="text-blue-200/70 transition-colors hover:text-white"
+            className="text-red-200/70 transition-colors hover:text-white"
           >
             About
           </a>
           <a
             href="#"
-            className="text-blue-200/70 transition-colors hover:text-white"
+            className="text-red-200/70 transition-colors hover:text-white"
           >
             Contact
           </a>
@@ -210,30 +210,30 @@ export default function Home() {
           }`}
         >
           {/* Badge */}
-          <div className="glass-card mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs text-blue-200">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-blue-400" />
+          <div className="glass-card mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs text-red-200">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-red-400" />
             Now in public beta
           </div>
 
           {/* Headline */}
           <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight text-white sm:text-5xl md:text-7xl">
             Build the future with{" "}
-            <span className="bg-gradient-to-r from-blue-300 via-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-red-300 via-red-400 to-orange-300 bg-clip-text text-transparent">
               Nexus
             </span>
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-blue-200/60 md:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-red-200/60 md:text-xl">
             A next-generation platform designed for modern teams. Ship faster,
             scale effortlessly, and craft experiences that stand out.
           </p>
 
           {/* Buttons */}
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button className="glass-button-primary rounded-xl px-8 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25">
+            <button className="glass-button-primary rounded-xl px-8 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25">
               Start Building
             </button>
-            <button className="glass-button rounded-xl px-8 py-3.5 text-base font-medium text-blue-200 transition-all duration-300 hover:bg-white/10">
+            <button className="glass-button rounded-xl px-8 py-3.5 text-base font-medium text-red-200 transition-all duration-300 hover:bg-white/10">
               Watch Demo
             </button>
           </div>
@@ -255,7 +255,7 @@ export default function Home() {
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
             Everything you need
           </h2>
-          <p className="mx-auto max-w-xl text-blue-200/60">
+          <p className="mx-auto max-w-xl text-red-200/60">
             From real-time collaboration to robust infrastructure — we&apos;ve
             got you covered.
           </p>
@@ -295,11 +295,11 @@ export default function Home() {
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
             Ready to get started?
           </h2>
-          <p className="mx-auto mb-8 max-w-lg text-blue-200/70">
+          <p className="mx-auto mb-8 max-w-lg text-red-200/70">
             Join thousands of teams already building with Nexus. Free trial, no
             credit card required.
           </p>
-          <button className="glass-button-primary rounded-xl px-10 py-4 text-lg font-semibold text-white transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25">
+          <button className="glass-button-primary rounded-xl px-10 py-4 text-lg font-semibold text-white transition-all duration-300 hover:shadow-lg hover:shadow-red-500/25">
             Start Free Trial
           </button>
         </div>
@@ -307,9 +307,9 @@ export default function Home() {
 
       {/* ── Footer ── */}
       <footer className="relative z-10 border-t border-white/5 px-6 py-8">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-blue-200/40 md:flex-row">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-red-200/40 md:flex-row">
           <div className="flex items-center gap-2">
-            <div className="flex h-5 w-5 items-center justify-center rounded bg-gradient-to-br from-blue-400 to-blue-600">
+            <div className="flex h-5 w-5 items-center justify-center rounded bg-gradient-to-br from-red-400 to-red-600">
               <span className="text-[9px] font-bold text-white">N</span>
             </div>
             <span>&copy; {new Date().getFullYear()} Nexus. All rights reserved.</span>
@@ -317,19 +317,19 @@ export default function Home() {
           <div className="flex gap-6">
             <a
               href="#"
-              className="transition-colors hover:text-blue-200/60"
+              className="transition-colors hover:text-red-200/60"
             >
               Privacy
             </a>
             <a
               href="#"
-              className="transition-colors hover:text-blue-200/60"
+              className="transition-colors hover:text-red-200/60"
             >
               Terms
             </a>
             <a
               href="#"
-              className="transition-colors hover:text-blue-200/60"
+              className="transition-colors hover:text-red-200/60"
             >
               Status
             </a>
