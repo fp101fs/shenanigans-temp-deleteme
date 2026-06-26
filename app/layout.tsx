@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nexus — Blue Glass Landing",
-  description: "A modern glassmorphic landing page built with Next.js",
+  title: "Nexus — Modern Glassmorphic Landing Page",
+  description:
+    "A next-generation platform built for modern teams. Ship faster, scale effortlessly, and craft standout experiences.",
 };
 
 export default function RootLayout({
