@@ -818,7 +818,8 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* ── CTA ── */}
+      <section
         ref={ctaRef}
         className="relative z-10 mx-auto max-w-4xl px-6 pb-32 pt-20"
       >
