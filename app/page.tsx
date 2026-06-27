@@ -362,7 +362,7 @@ const Navigation = () => {
             Pricing
           </a>
           <a
-            href="#"
+            href="#about"
             className="text-red-200/70 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]"
           >
             About
@@ -772,7 +772,124 @@ export default function Home() {
         <div className="h-px bg-gradient-to-r from-transparent via-red-400/20 to-transparent" />
       </div>
 
+      {/* ── About ── */}
+      <section id="about" className="relative z-10 mx-auto max-w-7xl px-6 pb-28 pt-20">
+        <div className="mb-16 text-center">
+          <span className="mb-4 inline-block rounded-full border border-red-400/20 bg-red-400/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-red-300">
+            About
+          </span>
+          <h2 className="mb-4 text-4xl font-bold text-white md:text-5xl">
+            Built for modern teams
+          </h2>
+          <p className="mx-auto max-w-2xl text-lg text-red-200/60">
+            Nexus started with a simple idea: give teams the tools they need to
+            ship great products without getting in the way.
+          </p>
+        </div>
 
+        <div className="grid gap-8 md:grid-cols-2">
+          {/* Mission */}
+          <div className="group glass-card p-8 transition-all duration-700 ease-out">
+            <h3 className="mb-4 text-2xl font-semibold text-white transition-colors duration-300 group-hover:text-red-200">
+              Our Mission
+            </h3>
+            <p className="leading-relaxed text-red-200/70 transition-colors duration-300 group-hover:text-red-200/90">
+              We believe that great infrastructure should be invisible. Our
+              platform handles the complexity so your team can focus on what
+              matters — building products that delight users and drive
+              business forward.
+            </p>
+            <div className="mt-6 flex items-center gap-4 text-sm text-red-200/50">
+              <span className="flex items-center gap-1.5">
+                <svg className="h-4 w-4 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+                10k+ teams
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="h-4 w-4 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+                30+ regions
+              </span>
+              <span className="flex items-center gap-1.5">
+                <svg className="h-4 w-4 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                </svg>
+                99.9% uptime
+              </span>
+            </div>
+          </div>
+
+          {/* Values */}
+          <div className="group glass-card p-8 transition-all duration-700 ease-out">
+            <h3 className="mb-4 text-2xl font-semibold text-white transition-colors duration-300 group-hover:text-red-200">
+              Our Values
+            </h3>
+            <ul className="space-y-4">
+              {[
+                {
+                  title: "Radical Simplicity",
+                  desc: "Every feature we build should reduce complexity, not add to it.",
+                },
+                {
+                  title: "Speed as a Feature",
+                  desc: "We optimize every millisecond because your users deserve better.",
+                },
+                {
+                  title: "Trust by Default",
+                  desc: "Security and privacy are baked in from day one, not bolted on later.",
+                },
+                {
+                  title: "Open by Design",
+                  desc: "APIs, integrations, and extensibility are first-class citizens.",
+                },
+              ].map((value) => (
+                <li
+                  key={value.title}
+                  className="flex items-start gap-3 border-b border-white/5 pb-4 last:border-0 last:pb-0"
+                >
+                  <div className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-red-400/10">
+                    <svg className="h-2.5 w-2.5 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-white">{value.title}</div>
+                    <div className="mt-0.5 text-xs text-red-200/50">{value.desc}</div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Story row */}
+        <div className="mt-8 group glass-card p-8 transition-all duration-700 ease-out md:p-10">
+          <div className="flex flex-col items-center gap-6 text-center md:flex-row md:text-left">
+            <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
+              <span className="text-3xl font-bold text-red-400">N</span>
+            </div>
+            <div>
+              <h3 className="mb-2 text-xl font-semibold text-white">
+                Our Story
+              </h3>
+              <p className="max-w-2xl leading-relaxed text-red-200/70">
+                Founded in 2021, Nexus emerged from the frustration of
+                watching talented teams struggle with tooling that slowed them
+                down. We set out to build the platform we always wished we had
+                — one that combines enterprise-grade reliability with a
+                developer experience that truly sparks joy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Divider ── */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-red-400/20 to-transparent" />
+      </div>
 
       {/* ── Testimonials ── */}
       <section id="testimonials" className="relative z-10 mx-auto max-w-7xl px-6 py-20">
