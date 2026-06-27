@@ -356,7 +356,7 @@ const Navigation = () => {
             Features
           </a>
           <a
-            href="#"
+            href="#pricing"
             className="text-red-200/70 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]"
           >
             Pricing
@@ -598,6 +598,172 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Divider ── */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-red-400/20 to-transparent" />
+      </div>
+
+      {/* ── Pricing ── */}
+      <section id="pricing" className="relative z-10 mx-auto max-w-7xl px-6 pb-28 pt-20">
+        <div className="mb-16 text-center">
+          <span className="mb-4 inline-block rounded-full border border-red-400/20 bg-red-400/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-red-300">
+            Pricing
+          </span>
+          <h2 className="mb-4 text-4xl font-bold text-white md:text-5xl">
+            Simple, transparent pricing
+          </h2>
+          <p className="mx-auto max-w-xl text-lg text-red-200/60">
+            Choose the plan that fits your team&apos;s needs. All plans include unlimited projects and 24/7 support.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-3">
+          {/* Free Card */}
+          <div className="group glass-card p-8 transition-all duration-700 ease-out hover:-translate-y-2">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-400/20 bg-red-400/5 px-3 py-1 text-xs font-medium uppercase tracking-widest text-red-300">
+              Free
+            </div>
+            <h3 className="mb-5 text-3xl font-bold text-white">
+              $0
+            </h3>
+            <p className="mb-6 text-xs text-red-200/40">
+              / month
+            </p>
+            <ul className="space-y-4 text-left text-red-200/60">
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Unlimited projects
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Basic analytics
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Community support
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Up to 2 team members
+              </li>
+            </ul>
+            <button className="glass-button w-full mt-6 rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-white/15">
+              Get started
+            </button>
+          </div>
+
+          {/* Pro Card - Popular */}
+          <div className="group glass-card p-8 transition-all duration-700 ease-out hover:-translate-y-2 border border-red-400/20">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-400/20 bg-red-400/5 px-3 py-1 text-xs font-medium uppercase tracking-widest text-red-300">
+              Popular
+            </div>
+            <h3 className="mb-5 text-3xl font-bold text-white">
+              $29
+            </h3>
+            <p className="mb-6 text-xs text-red-200/40">
+              / month
+            </p>
+            <ul className="space-y-4 text-left text-red-200/60">
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Unlimited projects
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Advanced analytics
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Priority support
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Unlimited team members
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Custom integrations
+              </li>
+            </ul>
+            <button className="glass-button-primary w-full mt-6 rounded-xl px-5 py-2.5 text-sm font-medium text-white">
+              Get started
+            </button>
+          </div>
+
+          {/* Enterprise Card */}
+          <div className="group glass-card p-8 transition-all duration-700 ease-out hover:-translate-y-2">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-400/20 bg-red-400/5 px-3 py-1 text-xs font-medium uppercase tracking-widest text-red-300">
+              Enterprise
+            </div>
+            <h3 className="mb-5 text-3xl font-bold text-white">
+              $99
+            </h3>
+            <p className="mb-6 text-xs text-red-200/40">
+              / month
+            </p>
+            <ul className="space-y-4 text-left text-red-200/60">
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Unlimited projects
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Advanced analytics + AI insights
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Dedicated account manager
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Unlimited team members
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                Custom integrations + SLA
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="h-3 w-3 text-red-400" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+                On-premise deployment
+              </li>
+            </ul>
+            <button className="glass-button w-full mt-6 rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-white/15">
+              Contact sales
+            </button>
+          </div>
         </div>
       </section>
 
