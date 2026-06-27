@@ -772,8 +772,53 @@ export default function Home() {
         <div className="h-px bg-gradient-to-r from-transparent via-red-400/20 to-transparent" />
       </div>
 
-      {/* ── CTA ── */}
-      <section
+
+
+      {/* ── Testimonials ── */}
+      <section id="testimonials" className="relative z-10 mx-auto max-w-7xl px-6 py-20">
+        <div className="mb-16 text-center">
+          <span className="mb-4 inline-block rounded-full border border-red-400/20 bg-red-400/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-red-300">
+            Testimonials
+          </span>
+          <h2 className="mb-4 text-4xl font-bold text-white md:text-5xl">
+            What our users say
+          </h2>
+          <p className="mx-auto max-w-xl text-lg text-red-200/60">
+            Hear from our community of builders and creators.
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {/* Testimonial 1 */}
+          <div className="glass-card p-6 rounded-xl border border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:border-red-400/15">
+            <blockquote className="text-left">
+              <p className="mb-3 text-red-200/80 leading-relaxed">"Nexus transformed the way we collaborate. The real-time editing and modular architecture let us ship features 2x faster."
+              </p>
+              <footer className="text-red-200/50">— Maya Patel, Product Lead, NovaTech</footer>
+            </blockquote>
+          </div>
+
+          {/* Testimonial 2 */}
+          <div className="glass-card p-6 rounded-xl border border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:border-red-400/15">
+            <blockquote className="text-left">
+              <p className="mb-3 text-red-200/80 leading-relaxed">"The edge network cut our load times from 3 seconds to under 300ms. Users love the speed."
+              </p>
+              <footer className="text-red-200/50">— Luis Hernández, CTO, Altis Labs</footer>
+            </blockquote>
+          </div>
+
+          {/* Testimonial 3 */}
+          <div className="glass-card p-6 rounded-xl border border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-500 hover:border-red-400/15">
+            <blockquote className="text-left">
+              <p className="mb-3 text-red-200/80 leading-relaxed">"Support is stellar — 24/7 help from engineers who actually understand our use case."
+              </p>
+              <footer className="text-red-200/50">— Priya Singh, DevOps Engineer, Summit Cloud</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+
         ref={ctaRef}
         className="relative z-10 mx-auto max-w-4xl px-6 pb-32 pt-20"
       >
