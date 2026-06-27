@@ -368,7 +368,7 @@ const Navigation = () => {
             About
           </a>
           <a
-            href="#"
+            href="#contact"
             className="text-red-200/70 transition-all duration-300 hover:text-white hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.5)]"
           >
             Contact
@@ -931,6 +931,143 @@ export default function Home() {
               </p>
               <footer className="text-red-200/50">— Priya Singh, DevOps Engineer, Summit Cloud</footer>
             </blockquote>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Divider ── */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-red-400/20 to-transparent" />
+      </div>
+
+      {/* ── Contact ── */}
+      <section id="contact" className="relative z-10 mx-auto max-w-7xl px-6 pb-28 pt-20">
+        <div className="mb-16 text-center">
+          <span className="mb-4 inline-block rounded-full border border-red-400/20 bg-red-400/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-red-300">
+            Contact
+          </span>
+          <h2 className="mb-4 text-4xl font-bold text-white md:text-5xl">
+            Get in touch
+          </h2>
+          <p className="mx-auto max-w-xl text-lg text-red-200/60">
+            Have a question or want to learn more? We&apos;d love to hear from you.
+          </p>
+        </div>
+
+        <div className="grid gap-8 lg:grid-cols-5">
+          {/* Contact info */}
+          <div className="lg:col-span-2 space-y-6">
+            <div className="glass-card p-6 transition-all duration-500">
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
+                  <svg className="h-5 w-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-white">Email</h3>
+                  <p className="mt-1 text-sm text-red-200/60">hello@nexus.dev</p>
+                  <p className="text-sm text-red-200/60">support@nexus.dev</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card p-6 transition-all duration-500">
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
+                  <svg className="h-5 w-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-white">Location</h3>
+                  <p className="mt-1 text-sm text-red-200/60">548 Market Street</p>
+                  <p className="text-sm text-red-200/60">San Francisco, CA 94104</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="glass-card p-6 transition-all duration-500">
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm">
+                  <svg className="h-5 w-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-white">Phone</h3>
+                  <p className="mt-1 text-sm text-red-200/60">+1 (555) 123-4567</p>
+                  <p className="text-sm text-red-200/60">Mon–Fri, 9am–6pm PST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact form */}
+          <div className="lg:col-span-3">
+            <form
+              className="glass-card p-8 transition-all duration-500 md:p-10"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <div className="mb-6 grid gap-6 md:grid-cols-2">
+                <div>
+                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-red-200/80">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                    className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-red-200/30 backdrop-blur-sm transition-all duration-300 focus:border-red-400/40 focus:outline-none focus:ring-1 focus:ring-red-400/20"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-red-200/80">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                    className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-red-200/30 backdrop-blur-sm transition-all duration-300 focus:border-red-400/40 focus:outline-none focus:ring-1 focus:ring-red-400/20"
+                  />
+                </div>
+              </div>
+              <div className="mb-6">
+                <label htmlFor="subject" className="mb-2 block text-sm font-medium text-red-200/80">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="What is this about?"
+                  className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-red-200/30 backdrop-blur-sm transition-all duration-300 focus:border-red-400/40 focus:outline-none focus:ring-1 focus:ring-red-400/20"
+                />
+              </div>
+              <div className="mb-8">
+                <label htmlFor="message" className="mb-2 block text-sm font-medium text-red-200/80">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows={5}
+                  placeholder="Tell us more about your project or question..."
+                  className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-red-200/30 backdrop-blur-sm transition-all duration-300 focus:border-red-400/40 focus:outline-none focus:ring-1 focus:ring-red-400/20"
+                />
+              </div>
+              <button
+                type="submit"
+                className="glass-button-primary w-full rounded-xl px-6 py-3.5 text-sm font-semibold text-white"
+              >
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  Send Message
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                  </svg>
+                </span>
+              </button>
+            </form>
           </div>
         </div>
       </section>
