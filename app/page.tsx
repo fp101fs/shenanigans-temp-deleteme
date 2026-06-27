@@ -374,9 +374,17 @@ const Navigation = () => {
             Contact
           </a>
         </div>
-        <button className="glass-button rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-white/15">
-          Get Started
-        </button>
+        <div className="flex items-center gap-3">
+          <a
+            href="/account"
+            className="glass-button rounded-xl px-4 py-2.5 text-sm font-medium text-red-200 transition-all duration-300 hover:bg-white/10"
+          >
+            My Account
+          </a>
+          <button className="glass-button rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-white/15">
+            Get Started
+          </button>
+        </div>
       </div>
     </nav>
   );
